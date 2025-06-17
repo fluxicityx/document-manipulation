@@ -32,8 +32,8 @@
 
     <script>
         const list = document.querySelector('ul') ;
-        const input = document.querySelectorAll('input');
-        const button = document.querySelectorAll('button');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
 
 
         button.addEventListener('click', () => {
@@ -45,9 +45,9 @@
             const listbutton = document.createElement('button')
 
             listItem.appendChild(listText)
-            listText.textContent = myItem;
-            listItem.textContent = myitem;
+            listText.textContent = myitem;
             listItem.appendChild(listbutton)
+            listbutton.textContent = "Delete";
             list.appendChild(listItem);
 
             listbutton.addEventListener('click', () => {
